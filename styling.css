@@ -1,0 +1,62 @@
+/* radial-gradient has three parameters (shape,center colour,outside color */
+
+body{
+    background: radial-gradient(circle, #fff, #ccc);
+    height: 100%;
+}
+
+#container{
+    height: 100vh;
+    background-color: #9DD2EA;
+    margin: 100px;
+    box-shadow: 0 6px 0 0 gray;
+}
+
+#counter{
+    height: 10vh;
+    background-color: yellow;    
+    font-size: 3vh;
+}
+
+#question{
+    height: 25vh;
+    background-color: rgb(84, 142, 230);
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+#answer{
+    height: 10vh;
+    background-color: violet;
+    font-size: 3vh;
+}
+
+.card{
+    background-color: #fff;
+    height: 20vh;   
+    cursor: pointer;
+}
+
+.card:hover, #startreset:hover{
+    background-color : rgb(235, 255, 51);
+    box-shadow: 0 0 2px 0 gray;
+}
+
+#timeremaining, #correct, #wrong{
+    display: none;
+}
+
+/* Common Attributes */
+#container, #counter, #question, #answer, #startreset, #timeremaining, #correct, #wrong{
+    border-radius: 10px;    
+}
+
+#counter, #question, #answer, .card, #startreset, #timeremaining{
+    box-shadow: 0 4px 0 0 gray;
+}
+
+#startreset, #timeremaining{
+    font-size: 3vh;
+    cursor: pointer;
+    height: 7vh;
+}

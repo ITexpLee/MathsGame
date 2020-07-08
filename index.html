@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Game</title>
+    <!--Bootstrap Cdn-->
+    <!--Css file-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Styling Css File-->
+    <link href="styling.css" rel="stylesheet"/>
+</head>
+<body><!--Main container-->
+    <div class="container-fluid" id="mainpage">
+        <div class="row">
+            <div class="col-md-10 col-sm-12 mx-auto p-3" id="container">
+                <!--Score Counter-->
+                <div class="row no-gutters justify-content-center text-center">
+                    <div class="col-sm-1 py-2 bg-success" id="correct">Correct</div>
+                    <div class="col-sm-1 py-2 bg-danger" id="wrong">Wrong</div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="offset-sm-10 col-md-2 col-sm-2 text-center pt-3" id="counter">Score : <span id="score"></span></div>      
+                </div>
+                <!--Question Display-->
+                <div class="row no-gutters">
+                    <div class="offset-sm-1 col-md-9 col-sm-9 mx-auto mt-4 text-center pt-3" id="question"></div>      
+                </div> 
+                <!--Click for Answer-->
+                <div class="row no-gutters">
+                    <div class="offset-sm-1 col-md-9 col-sm-9 mx-auto mt-2 text-center pt-4" id="answer">Click on the Correct Answer</div>      
+                </div>
+                <!--Answer Cards-->
+                 <div class="row no-gutters justify-content-center mt-4">
+                     <div class="col-sm-2 card mr-2 text-center pt-2" id="box1"></div>
+                     <div class="col-sm-2 card ml-4 mr-2 text-center pt-2" id="box2"></div>
+                     <div class="col-sm-2 card ml-4 mr-2 text-center pt-2" id="box3"></div>
+                     <div class="col-sm-2 card ml-4 text-center pt-2" id="box4"></div>
+                 </div>
+                 <!--Reset and Time-->
+                 <div class="row mt-4">
+                    <div class="col-md-10 offset-sm-2 mx-auto">
+                        <div class="row">    
+                            <div class="col-sm-2 bg-primary offset-sm-5 py-2 text-center" id="startreset">Start</div>   
+                            <div class="col-sm-3 bg-success offset-sm-2 py-2 text-center" id="timeremaining">Time remaining: <span id="timeremainingvalue"></span>sec</div>
+                        </div>    
+                    </div>    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!--Javascript Files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Developer Script files-->
+    <script src="index.js"></script>
+</body>
+</html>
